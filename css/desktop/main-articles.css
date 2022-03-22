@@ -9,7 +9,7 @@ html{
     font-family: var(--fuente-texto);
 }
 
-ul{
+li{
     list-style: none;
 }
 
@@ -19,6 +19,10 @@ img{
 
 a{
     text-decoration: none;
+}
+
+h2,h3{
+    display: inline-block;
 }
 
 /* variables */
@@ -35,6 +39,15 @@ a{
     --rosa: #A57982 ;
     --amarillo: #e5c687;
     --rojo: #C16E70;
+    --blanco-opaco: #DDD8C4 ;
+    --negro: #1f1e1a;
+}
+
+body{
+    box-shadow: -2px -101px 161px -5px #161814 inset;
+    background-color: #1f1e1a;
+    background-image: linear-gradient(to right, #161614b0, #161614a9 5px, var(--negro) 5px, var(--negro) );
+    background-size: 15px 100%;
 }
 
 header{
@@ -73,6 +86,257 @@ header .header-navbar a span:hover{
     color: var(--blanco-rosa);
 }
 
+main{
+    padding: 2rem;
+    color: var(--blanco);
+    
+}
+
+main .main-menu_tittles{
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+main .main-menu_principalpost{
+    max-width: 120rem;
+    background-color: var(--oscuro);
+    font-size: 1.2rem;
+    margin: 0 auto;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 35px 2px #171815;
+    margin-bottom: 3.5rem;
+    position: relative;
+}
+
+main .main-menu_principalpost figure{
+    height: 35rem;
+    background-image: url(https://images.pexels.com/photos/247931/pexels-photo-247931.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 90%;
+    border-radius: .5rem .5rem 0 0;
+}
+
+main .main-menu_principalpost div{
+    padding: 1.5rem;
+}
+
+main .main-menu_principalpost div a h2{
+    color: var(--blanco-opaco);
+    text-decoration: none;
+}
+
+main .main-menu_principalpost div a h2:hover{
+    color: var(--amarillo);
+    text-decoration: underline;
+}
+
+main .main-menu_principalpost div p{
+    margin: .6rem 0 2rem 0;
+    opacity: 75%;
+    color: var(--blanco-opaco);
+}
+
+main .main-menu_principalpost a span{
+    position: absolute;
+    color: var(--amarillo);
+    right: 2rem;
+    bottom: 1rem;
+
+}
+
+main .main-menu_alternative-post{
+    margin: 0 auto;
+    max-width: 110rem;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-auto-rows: 36rem;
+    gap: 2rem;
+}
+
+main .main-menu_alternative-post .post{
+    background-color: var(--oscuro);
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+    border-radius: .5rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 0px 35px 2px #171815
+}
+
+
+
+main .main-menu_alternative-post .post figure{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 87%;
+    border-radius: .5rem 0 0 .5rem;
+    position: relative;
+    height: 20rem;
+    z-index: 10;
+}
+
+
+main .main-menu_alternative-post .post div{
+    padding: 1.5rem;
+}
+
+main .main-menu_alternative-post .post div::before{
+    content: "";
+    width: 100%;
+    height: 15rem;
+    position: absolute;
+    top: 23rem;
+    left: 0;
+    background: linear-gradient(0deg, rgba(43,38,33,1) 17%, rgba(255,255,255,0) 73%);
+}
+
+main .main-menu_alternative-post .post div a{
+    color: var(--blanco-opaco);
+}
+
+main .main-menu_alternative-post .post div a:hover{
+    color: var(--amarillo);
+    text-decoration: underline;
+}
+
+main .main-menu_alternative-post .post div a h3{
+     font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+main .main-menu_alternative-post .post div a h3:hover{
+    text-decoration: underline;
+}
+
+main .main-menu_alternative-post .post a{
+    color: var(--amarillo);
+}
+
+main .main-menu_alternative-post .post a span{
+    position: absolute;
+    top: 33.5rem;
+    right: 1.4rem;
+    font-weight: 500;
+    letter-spacing: .05rem;
+    font-size: 1.15rem;
+}
+
+main .main-menu_alternative-post .post a span:hover{
+    color: var(--rojo);
+    text-decoration: underline;
+}
+
+/* imágenes */
+
+main .main-menu_alternative-post .post:nth-child(1) figure{
+    background-image: url(https://images.pexels.com/photos/64687/pexels-photo-64687.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)
+}
+
+main .main-menu_alternative-post .post:nth-child(2) figure{
+    background-image: url(https://images.pexels.com/photos/237865/pexels-photo-237865.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)
+}
+
+
+main .main-menu_alternative-post .post:nth-child(3) figure{
+    background-image: url(https://images.pexels.com/photos/57018/pexels-photo-57018.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)
+}
+
+main .main-menu_alternative-post .post:nth-child(4) figure{
+    background-image: url(https://images.pexels.com/photos/159613/ghettoblaster-radio-recorder-boombox-old-school-159613.jpeg?auto=compress&cs=tinysrgb&h=650&w=940)
+}
+
+main .main-menu_alternative-post .post:nth-child(5) figure{
+    background-image: url(https://images.pexels.com/photos/63196/pexels-photo-63196.jpeg?auto=compress&cs=tinysrgb&h=650&w=940)
+}
+
+main .main-menu_alternative-post .post:nth-child(6) figure{
+    background-image: url(https://images.pexels.com/photos/2007088/pexels-photo-2007088.jpeg?auto=compress&cs=tinysrgb&h=650&w=940)
+}
+
+main .main-menu_alternative-post .post:nth-child(7) figure{
+    background-image: url(https://images.pexels.com/photos/4913388/pexels-photo-4913388.jpeg?auto=compress&cs=tinysrgb&h=650&w=940)
+}
+
+main .main-menu_alternative-post .post:nth-child(8) figure{
+    background-image: url(https://images.pexels.com/photos/1181789/pexels-photo-1181789.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)
+}
+
+main .main-menu_alternative-post .post:nth-child(9) figure{
+    background-image: url(https://images.pexels.com/photos/6217293/pexels-photo-6217293.jpeg?auto=compress&cs=tinysrgb&h=650&w=940)
+    
+}
+
+
+main .main-menu_alternative-post .post:nth-child(10) figure{
+    background-image: url(https://images.pexels.com/photos/4373089/pexels-photo-4373089.jpeg?auto=compress&cs=tinysrgb&h=650&w=940)
+}
+
+
+main .main-menu_alternative-post .post:nth-child(11) figure{
+    background-image: url(https://images.pexels.com/photos/5721908/pexels-photo-5721908.jpeg?auto=compress&cs=tinysrgb&h=650&w=940)
+}
+
+main .main-menu_alternative-post .post:nth-child(12) figure{
+    background-image: url(https://images.pexels.com/photos/239419/pexels-photo-239419.jpeg?auto=compress&cs=tinysrgb&h=650&w=940)
+}
+
+
+
+
+/* fin */
+
+hr {
+    width: 70%;
+    max-width: 100rem;
+    border: 2px solid var(--blanco-rosa);
+    border-radius: 3000px/10px;
+    height: 0px;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+footer{
+    text-align: center;
+    padding: 2rem;
+    color: var(--blanco-opaco);
+    opacity: 82%;
+    font-size: 1.1rem;
+}
+
+footer p{
+    margin: .6rem 0;
+}
+
+footer nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer nav ul li{
+    margin: .5rem 1rem ;
+}
+
+footer nav ul li a img{
+    filter: invert(100%);
+    opacity: 80%;
+}
+
+footer .example-links .example-links_list li{
+    color: var(--amarillo);
+    cursor: pointer;
+}
+
+footer .example-links .example-links_list li:hover{
+    color: var(--rojo);
+    text-decoration: underline;
+}
+
 
 @media (min-width:450px) {
     header{
@@ -91,4 +355,37 @@ header .header-navbar a span:hover{
     header .header-navbar{
         margin-right: 5%;
     }
+
+        
+
+    main .main-menu_alternative-post{
+        grid-template-columns: repeat(auto-fill, minmax(40rem,1fr)) ;
+        grid-auto-rows: 20rem;
+    }
+
+    main .main-menu_alternative-post .post{
+        grid-template-columns: 2fr 3fr;
+    }
+
+    main .main-menu_alternative-post .post figure::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 1px;
+        background: linear-gradient(90deg, rgba(143,75,75,0) 0%, rgba(43,38,33,1) 99.9%);
+        
+    }
+
+    main .main-menu_alternative-post .post div::before{
+        height: 15rem;
+        top: 5rem;
+    }
+
+    main .main-menu_alternative-post .post a span{
+        top: 17.7rem;
+        right: 1.4rem;
+    }
+
 }
